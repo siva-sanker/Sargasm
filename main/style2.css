@@ -1,0 +1,185 @@
+body {
+  background: url('image/bg.jpg') center center; 
+  background-size: cover;/* Example gradient */
+  margin: 0;
+  padding: 0;
+  height: 100vh; /* Make the body take the full height of the viewport */
+  color: #fff; /* Set the default text color to white for better contrast */
+}
+
+/* Navbar Styles */
+.navbar {
+    position:sticky; /* Sticks to the top on scroll */
+    top: 0;
+    background-color: #000000dc; /* Dark background */
+    padding: 10px 20px;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .navbar ul {
+    list-style: none; /* Remove default list styling */
+    margin: 0;
+    padding: 0;
+    display: flex; /* Arrange items horizontally */
+    gap: 20px; /* Space between nav items */
+  }
+  
+  .navbar li {
+    position: relative;
+  }
+  
+  .navbar a {
+    text-decoration: none; /* Remove underline */
+    color: #bbb820bd; /* Light black text */
+    font-size: 1.01rem;
+    padding: 10px 50px;
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.5s ease, transform 0.5s ease;
+  }
+  
+  .navbar a:hover {
+    background-color: #ffdd57; /* Highlight color on hover */
+    color: #000; /* Dark text on hover */
+    transform: scale(1.1); /* Slightly enlarge on hover */
+  }
+  /* Active link (optional for current section highlight) */
+  /* .navbar a.active {
+    background-color: #ffdd57;
+    color: #000;
+  } */
+  
+  /* Scroll To Top Button */
+  #scrollToTopBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 0;
+    height: 0;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    border-top: 40px solid #007bff; /* Triangle color */
+    cursor: pointer;
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+    align-items: center; /* Center the content vertically */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    display: none; /* Initially hidden */
+    z-index: 1000;
+  }
+  
+  /* Add the arrow inside the button */
+  #scrollToTopBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #e8d43f;
+    color: #000000;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    display: none; /* Initially hidden */
+    z-index: 1000; /* Keep above all content */
+  }
+  
+  #scrollToTopBtn:hover {
+    background-color: #f21c15;
+  }
+  
+  /* Section styling  */
+
+  section {
+    position: relative;
+    padding: 260px 220px;
+    margin: 20px auto;
+    text-align: center;
+    max-width: 800px;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+  }
+  
+/* Make the h2 invisible initially */
+section h2{
+    color: wheat;
+    transition: opacity 0.5s ease-in-out; /* Smooth transition */
+    pointer-events: none; /* Prevent interaction when hidden */
+    font-size: 6rem;
+    opacity: 0;
+}
+
+/* On hover, make them visible */
+section:hover h2{
+  opacity: 1; /* Make them visible */
+  pointer-events: auto; /* Enable interaction when visible */
+  transition-delay: 0s;
+}
+  
+  section:hover .background-video {
+    display: block; /* Show video on hover */
+  }
+
+  /* Background Video  */
+  /* Add transition effect */
+
+.background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    opacity: 0.5; /* Fully visible initially */
+    display: none;
+    transition: opacity 0.5s ease; /* Smooth fade out over 0.5 seconds */
+  }
+  
+  .background-video.hidden {
+    opacity: 0; /* Fully transparent */
+  }
+
+  /* Contact form  */
+  
+  #contact{
+    padding: 80px 220px;
+  }
+  #contact-form label {
+    font-weight: bold;
+    color: #2c3e50;
+  }
+
+  #name, #comment {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #e74c3c;
+    border-radius: 10px;
+    font-size: 1em;
+  }
+
+  #send-btn {
+    background-color: #ed20096e;
+    color: rgba(234, 200, 35, 0.837);
+    padding: 10px 40px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1em;
+    font-family: 'Verdana, Geneva, Tahoma, sans-serif';
+    font-weight:lighter;
+    margin-top: 90px;
+    transition: all 0.3s ease-in-out;
+  }
+
+  #send-btn:hover {
+    background-color: #f42eed00;
+    color: rgb(252, 3, 3);
+    transform: scale(14.1);
+  }
