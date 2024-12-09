@@ -7,13 +7,14 @@ Perfect for anyone who wants to know more about me in a fun and creative way!
 
 ## Section-based Layout:
 
-> About Me
-> What People Think of Me
-> What I Really Am
-> Role Models
-> Hobbies
-> Contact
-> Interactive Background Videos:
+* About Me
+* What People Think of Me
+* What I Really Am
+* Role Models
+* Hobbies
+* Contact
+
+ ## Interactive Background Videos:
 
 Each section has a unique set of videos that play in sequence when hovered over.
 
@@ -45,7 +46,7 @@ Allows users to send messages with an interactive response.
 
 * Clone the Repository.
 * Navigate to the Project Directory.
-* Open index.html in a Browser: Simply open the index.html file in any modern web browser to view the site.
+* Open " index.html " in a Browser: Simply open the " index.html " file in any modern web browser to view the site.
 
 ## Future Improvements
 
