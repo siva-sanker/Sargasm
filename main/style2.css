@@ -91,6 +91,65 @@ body {
   #scrollToTopBtn:hover {
     background-color: #f21c15;
   }
+
+  /* Intro Page  */
+
+  #intro-overlay {
+    font-family: 'Roboto', sans-serif;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9); /* Semi-transparent black */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2000; /* Ensure it appears above all other content */
+    opacity: 1; /* Initially fully visible */
+    transition: opacity 1s ease, visibility 1s ease; /* Smooth fade-out */
+}
+
+#intro-overlay.hidden {
+    opacity: 0; /* Fully transparent */
+    visibility: hidden; /* Hide after fading out */
+}
+
+#intro-message {
+    text-align: center;
+    color: #fff;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+#intro-message h1 {
+  font-family: 'Pacifico', cursive;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+#intro-message p {
+  font-family: 'Bebas Neue',serif;
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+#start-btn {
+    background: #ffdd57;
+    color: #000;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+#start-btn:hover {
+    background: #ffcc00;
+}
   
   /* Section styling  */
 
@@ -153,7 +212,8 @@ section:hover h2{
   }
   #contact-form label {
     font-weight: bold;
-    color: #2c3e50;
+    color: wheat;
+    font-size: 2.01em;
   }
 
   #name, #comment {

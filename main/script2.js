@@ -1,3 +1,19 @@
+document.addEventListener('DOMContentLoaded', () => {
+  const introOverlay = document.getElementById('intro-overlay');
+  const startButton = document.getElementById('start-btn');
+
+  startButton.addEventListener('click', () => {
+      // Add the hidden class to trigger the fade-out effect
+      introOverlay.classList.add('hidden');
+
+      // Optionally remove the overlay element after the transition ends
+      setTimeout(() => {
+          introOverlay.style.display = 'none';
+      }, 1000); // Matches the transition duration in CSS (1s)
+  });
+});
+
+
 // Video sources for each section
 const videoSources = {
     aboutMe: ['videos/really-am/ambi.mp4'],

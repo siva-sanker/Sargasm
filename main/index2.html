@@ -1,15 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style2.css">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue:wght@200;300;400;500&display=swap" rel="stylesheet">
+
     <title>Sargasm: Funny Portfolio</title>
+
 </head>
+
 <body>
+
     <nav class="navbar">
-        <ul>
+
+      <ul>
           <li><a href="#aboutMe">About Me</a></li>
           <li><a href="#whatPeopleThink">What People Think of Me</a></li>
           <li><a href="#whatIReallyAm">What I Really Am</a></li>
@@ -17,12 +26,23 @@
           <li><a href="#roleModels">Role Models</a></li>
           <li><a href="#hobbies">Hobbies</a></li>
           <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
+      </ul>
+
+    </nav>
 
       <!-- Scroll to top button  -->
       <button id="scrollToTopBtn" title="Go to top">⬇</button>
 
+      <div id="intro-overlay">
+        <div id="intro-message">
+            <h1>Welcome to Sargasm!</h1>
+            <p>For the best experience, please use headphones 🎧
+              , or Speakers!
+            </p>
+            <button id="start-btn">Enter</button>
+        </div>
+    </div>
+    
       <!-- About me  -->
 
       <section id="aboutMe">
@@ -64,14 +84,13 @@
       </section>
       
       <!-- Contact section  -->
-
       <section id="contact">
         <h2>Comments?</h2>
         <form id="contact-form" style="display: flex; flex-direction: column; gap: 20px;">
-          <label for="name" style="color: wheat; font-size: 2.01em;">Your Name:</label>
+          <label for="name">Your Name:</label>
           <input type="text" id="name" placeholder="Enter your name..." required />
       
-          <label for="comment" style="color: wheat;font-size: 2.01em; gap: 20px;">Your Comments:</label>
+          <label for="comment">Your Comments:</label>
           <textarea id="comment" rows="4" placeholder="Type your comments here..." required></textarea>
       
           <button type="button" id="send-btn">Send</button>
@@ -79,5 +98,6 @@
       </section>
       
     <script src="script2.js"></script>
+
 </body>
 </html>
