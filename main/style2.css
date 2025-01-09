@@ -150,7 +150,7 @@ body {
 #start-btn:hover {
     background: #ffcc00;
 }
-  
+
   /* Section styling  */
 
   section {
@@ -186,7 +186,6 @@ section:hover h2{
   }
 
   /* Background Video  */
-  /* Add transition effect */
 
 .background-video {
     position: absolute;
@@ -194,11 +193,12 @@ section:hover h2{
     left: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover;
-    z-index: -1;
+    object-fit:contain;
+    z-index: 0.6;
     opacity: 0.5; /* Fully visible initially */
     display: none;
     transition: opacity 0.5s ease; /* Smooth fade out over 0.5 seconds */
+    transform: scale(1.2);
   }
   
   .background-video.hidden {

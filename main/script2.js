@@ -16,12 +16,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // Video sources for each section
 const videoSources = {
-    aboutMe: ['videos/really-am/ambi.mp4'],
     whatPeopleThink: ['videos/what-ppl-think/kochi.mp4', 'videos/what-ppl-think/mrmaru.mp4','videos/what-ppl-think/salaam.mp4'],
-    whatIReallyAm: [''],
+    whatIReallyAm: ['videos/really-am/ambi.mp4'],
     education: ['videos/education/educate.mp4','videos/education/kattappana.mp4'],
-    roleModels: ['videos/rolemodels/JC.mp4','videos/rolemodels/shanks.mp4',
-      'videos/rolemodels/dp.mp4','videos/rolemodels/ironman.mp4','videos/rolemodels/stewie.mp4','videos/rolemodels/skipper.mp4'],
+    roleModels: ['videos/rolemodels/shanks.mp4','videos/rolemodels/JC.mp4',
+      'videos/rolemodels/roger.mp4','videos/rolemodels/ironman.mp4','videos/rolemodels/stewie.mp4','videos/rolemodels/skipper.mp4'],
     hobbies: ['videos/hobbies/food.mp4','videos/hobbies/sing.mp4','videos/hobbies/tv.mp4','videos/hobbies/frnds.mp4']
   };
   // Track the current index for each section
@@ -90,7 +89,7 @@ const videoSources = {
       });
     });
   });
-  
+
 // Scroll to top button functionality 
 
   const scrollToTopBtn = document.getElementById("scrollToTopBtn");
@@ -111,14 +110,14 @@ const videoSources = {
     message.id = "goingUpMessage";
     message.innerHTML = "Pattiche!!";
     message.style.position = "fixed";
-    message.style.top = "110px";
+    message.style.top = "60px";
     message.style.left = "50%";
     message.style.transform = "translateX(-50%)";
-    message.style.color = "white";
+    message.style.color = "red";
     message.style.padding = "10px 20px";
     message.style.borderRadius = "5px";
-    message.style.fontSize = "35px";
-    message.style.zIndex = "9999";
+    message.style.fontSize = "38px";
+    message.style.zIndex = "1";
     message.style.display = "none";
     
     // Append the message to the body
@@ -149,9 +148,7 @@ const videoSources = {
     }
 
     const randomMessages = [
-      "Do you like coding?",
-      "Is JavaScript your favorite language?",
-      "Do you enjoy problem-solving?"
+      "aara?",'entha?','povarayille'
     ];
 
     let questionIndex = 0;
